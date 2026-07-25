@@ -14,8 +14,8 @@
         <header>
             <img class="logo" src="img/adit.png">
             <nav>
-                <a class="chosen" href="#">Anasayfa</a>
-                <a href="#">Dergi</a>
+                <a href="#">Anasayfa</a>
+                <a class="chosen" href="#">Dergi</a>
                 <a href="#">Forum</a>
                 <a href="#">Blog</a>
                 <a href="#">Etkinlikler</a>
@@ -23,32 +23,6 @@
                 <a href="#">Hakkımızda</a>
             </nav>
         </header>
-        <div class="main">
-            <main class="content">
-                <h1 class="title">LINGUA ÇOK YAKINDA!</h1>
-                <p>Dilbilim araştırmalarını, öğrenci yazılarını ve 
-                    akademik etkinlikleri bir araya geldiği sitemize hoş geldiniz! </p>
-            </main>
-            <main class="content">
-                <img style="width: 500px; margin-right: 50px" src="img/lingokafa.png"/>
-            </main>
-        </div>
-
-        <section class="section">
-            <h2>Merak Et, Sorgula, Keşfet</h2>
-            <p style="display: inline">ADİT ve Lingua’nın sitesine hoşgeldiniz! Burada dilbilim hakkında 
-            içerikler keşfedebilir, etkinliklerimizi takip edebilir,
-            dergimizi okuyabilir
-            ve forumumuzda diğer üyelerle fikir alışverişinde
-            bulunabilirsiniz. 
-            Amacımız, dilbilime ilgi duyan herkesin soru sorabildiği,
-            araştırdığı ve 
-            birlikte öğrendiği aktif bir topluluk oluşturmaktır.
-            Aklınıza takılan her soru için instagram sayfamızdan bize
-            ulaşabilirsiniz! @audilbilimtoplulugu</p>
-
-            <img style="max-width: 200px; height: auto;" src="img/goz.png"/>
-        </section>
 
         <div class="slide-wrap">
             <div class="slideshow" id="slideshow" role="region" aria-roledescription="carousel" aria-label="Son dakika haberleri">
@@ -66,19 +40,31 @@
                 <div class="dots" id="dots"></div>
             </div>
         </div>
- 
+
+        <section class="midsection">
+            <h2>Siz de Dergimizin Bir Parçası Olabilirisiniz!</h2>
+            <p>Dergi yazıları için dönemlik olarak başvuru açıyoruz. Instagram hesabımızdan ve sitemizden duyuruları takip ederek yazı gönderim tarihlerine ulaşabilirsiniz.
+                <br><br>
+                Dergi yazılarınızı göndermek için mail adresimize yazabilirsiniz.
+                ankudilbilimtoplulugu@gmail.com
+                <br><br>
+                Ayrıca redaksiyon, editörlük, tasarım ve mizanpaj alanında deneyiminiz varsa dergi komisyonumuz için başvuruları Instagram hesabıızdan yapacağımız duyurularla takip edebilirsiniz!
+                @audilbilimtoplulugu
+            </p>
+        </section>
+
         <script>
         (function(){
         // Replace this array with your own feed (from an API, CMS, or JSON file).
         const slides = [
             {
-            tag: "Gönderi",
-            title: "YKS Sonuçları açıklandı!",
-            excerpt: "Ankara Üniversitesi Dilbilim bölümü hakkındaki sorularınızı bize iletebilirsiniz!",
-            author: "ADİT Instagram",
+            tag: "Sayı",
+            title: "LINGUA'nın İlk Sayısı Çok Yakında Sizlerle!",
+            excerpt: "Popüler kültürden yola çıkarak dilbilimin farklı alanlarını konuşacağımız öğrenci dergimiz çok yakında burada olacak.",
+            author: "LINGUA",
             time: "21 Temmuz 2026",
             src: "",
-            img: "img/sorlan.jpeg"
+            img: "img/lsoon.jpeg"
             },
             {
             tag: "Video",
@@ -87,7 +73,7 @@
             author: "ADİT Youtube",
             time: "31 Temmuz 2025",
             src: "https://www.youtube.com/watch?v=4u9YrjiXUjM",
-            img: "img/dboku.jpeg"
+            img: "img/lsubmit.jpeg"
             }
         ];
         
@@ -113,10 +99,6 @@
             <img src="${s.img}" alt="${s.title}" loading="lazy">
             <div class="scrim"></div>
             <div class="content">
-                <span class="tag">${s.tag}</span>
-                <h2>${s.title}</h2>
-                <p>${s.excerpt}</p>
-                <div class="meta"><span>${s.author}</span><span>${s.time}</span></div>
             </div>
             `;
             track.appendChild(el);
