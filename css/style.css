@@ -1,13 +1,14 @@
+@import url('https://googleapis.com');
+
 body
 {
     margin:0;
     font-family:Arial,Helvetica,sans-serif;
-    background:#f5f5f7;color:#222
+    background:#80b5cd;color:#222
 }
 header
 {
-    background:#111;
-    color:white;
+    color:black;
     padding:20px 40px;
     display:flex;
     justify-content:space-between;
@@ -15,65 +16,76 @@ header
 }
 header nav a
 {
-    color:white;
+    color:black;
     margin-left:20px;
     text-decoration:none;
-    font-weight:bold
+    font-weight:bold;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.chosen{
+    background-color: #c1ff72;
+    padding: 10px;
+    border-radius: 10px 
 }
 
 .logo
 {
     margin-left: 50px;
-    width: 100px;
+    width: 200px;
     height: 90px;
 }
 
 .main
 {
-    color: white;
-    width: 100%;
+    color: black;
+    width: 80%;
     height: 400px;
-    background-color: #134867;
+    background-color: #d8e0e2;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
     display: flex;
     align-items: center;
+    height: 400px;
 }
 
-.main h1, .main p {
-  margin: 0;
+.title {
+    font-family: 'League Spartan', sans-serif;
+    margin-top: 30px;
 }
 
 .content
 {
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 30%;
+    margin-left: 100px;
 }
 
 .section
 {
+    width: 80%;
     padding:60px 40px;
-    max-width:1200px;
-    margin:auto
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center; /* vertically centers them */
+    gap: 20px;
 }
 .section h2
 {
-    text-align:center;
-    margin-bottom:40px
+    background-color: #c1ff72;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Archivo Black', sans-serif;
+    font-style: normal; 
+    color: rgb(0, 0, 0); 
+    font-kerning: normal; 
+    text-decoration-line: none; 
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
 }
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-}
-.card{
-    font-size: 20px;
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-.card a{
-    text-decoration:none;
-    font-weight:bold;
-    color:#333
+
+.section p, .content p{
+    font-family: 'Chivo', 'Work Sans', sans-serif;
+    letter-spacing: -0.02em;
 }
