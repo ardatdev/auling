@@ -12,7 +12,8 @@ header
     padding:20px 40px;
     display:flex;
     justify-content:space-between;
-    align-items:center
+    align-items:center;
+    flex-wrap: wrap;
 }
 header nav a
 {
@@ -58,7 +59,6 @@ header nav a:hover
     border-radius: 10px;
     display: flex;
     align-items: center;
-    height: 400px;
 }
 
 .title {
@@ -72,6 +72,13 @@ header nav a:hover
     margin-left: 100px;
 }
 
+.homeimg{
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin-right: 50px
+}
+
 .section
 {
     width: 80%;
@@ -79,12 +86,11 @@ header nav a:hover
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    align-items: center; /* vertically centers them */
+    align-items: center;
     gap: 20px;
 }
 .section h2
 {
-    background-color: #c1ff72;
     padding: 10px;
     border-radius: 10px;
     font-family: 'Archivo Black', sans-serif;
@@ -96,7 +102,7 @@ header nav a:hover
     text-decoration-thickness: auto;
 }
 
-.section p, .content p{
+.section p, .content p, .midsection p{
     font-family: 'Chivo', 'Work Sans', sans-serif;
     letter-spacing: -0.02em;
 }
@@ -115,12 +121,22 @@ header nav a:hover
     font-size: 30px;
 }
 
+.midsection h1{
+    font-family: 'Archivo Black', sans-serif;
+    font-style: normal; 
+    color: rgb(0, 0, 0); 
+    font-kerning: normal; 
+    text-decoration-line: none; 
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+}
+
 .gallerybg{
     background: #b1cdd9;
     width: 100%;
     height: 300px;
     display: flex;
-    align-items: center; /* vertically centers them */
+    align-items: center;
     gap: 20px;
     padding: 10px 10px 10px 10px;
     overflow: scroll;
@@ -131,4 +147,193 @@ header nav a:hover
     height: 250px;
     border-radius: 10px;
     object-fit: cover; 
+}
+
+.abt{
+    width: 100vw !important; /* ben bunla ugrasamam border-radius da olmayıversin */
+    height: 450px;
+    background: url('../img/abt.png') center / contain no-repeat;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #c1ff72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer img{
+    height: 30px;
+}
+
+.footer p{
+    margin: 0;
+}
+
+/* ============ RESPONSIVE ============ */
+
+/* Tablet */
+@media (max-width: 900px) {
+    header {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    header nav a,
+    header nav a:hover {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+
+    .logo {
+        margin-left: 0;
+        width: 150px;
+        height: auto;
+    }
+
+    .main {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .content {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .homeimg {
+        width: 350px;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .section {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .section .content,
+    .section img {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .midsection {
+        width: 90%;
+        padding: 40px 20px;
+    }
+
+    .gallerybg img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .abt {
+        height: 350px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .logo {
+        margin-left: 0;
+        width: 120px;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        width: 100%;
+    }
+
+    .main {
+        width: 95%;
+        padding: 20px 0;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .homeimg {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .section {
+        width: 95%;
+        padding: 30px 15px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .midsection {
+        width: 95%;
+        padding: 30px 15px;
+    }
+
+    .midsection h1 {
+        font-size: 22px;
+    }
+
+    .midsection h2 {
+        font-size: 22px;
+    }
+
+    .gallerybg {
+        height: 220px;
+    }
+
+    .gallerybg img {
+        width: 220px;
+        height: 150px;
+    }
+
+    .abt {
+        height: 220px;
+        background-size: cover;
+    }
+
+    .footer {
+        height: auto;
+        padding: 12px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer a{
+        font-size: 10px;
+    }
+
+    .footer img{
+        height: 10px !important
+    }
 }
