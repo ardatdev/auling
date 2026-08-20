@@ -44,7 +44,7 @@ header nav a:hover
 .logo
 {
     margin-left: 50px;
-    width: 200px;
+    width: 250px;
     height: 90px;
 }
 
@@ -147,6 +147,16 @@ header nav a:hover
     height: 250px;
     border-radius: 10px;
     object-fit: cover; 
+}
+
+.issue{
+    width: 200px;
+    height: 300px;
+}
+
+.cover {
+    width: 200px;
+    height: 250px;
 }
 
 .abt{
